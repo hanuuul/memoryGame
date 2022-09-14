@@ -1,0 +1,62 @@
+body{
+    background-color: #2b2b2b;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+.title, p{
+    width: 100%;
+    text-align: center;
+    color: #aeaeae;
+}
+.gameBoard{
+    margin: 0 auto;
+    width: 324px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.btnArea{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 4px;
+    background-color: #404040;
+    cursor: pointer;
+}
+.pcSelect{
+    background-color: #9f67ec;
+}
+.userSelect{
+    background-color: #3c9cea;
+}
+
+#count{
+    position: absolute;
+    top: 74px;
+    font-size: 50px;
+    color: #c8c8c8;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+}
+
+#startBtn{
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #65dca2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
