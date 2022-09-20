@@ -61,17 +61,19 @@ function userSelect(){
         btnArea[i].addEventListener('click', function(e){
             if(isPcSelectDone == true){return false};
             //클릭영역 깜빡이고, userClickId에 id값을 추가
-            e.currentTarget.className = 'btnArea userSelect';
-            setTimeout(function(){
-                btnArea[i].classList.remove("userSelect");
-            }, 300);
+            if(pcSelect.length == gameStage){
+                e.currentTarget.className = 'btnArea userSelect';
+                setTimeout(function(){
+                    btnArea[i].classList.remove("userSelect");
+                }, 300);
+            }
             userClickId = e.currentTarget.getAttribute('id');
 
             //정답 체크
             if(userClickId != pcSelect[userClickCnt]){
                 //오답, 게임오버
                 console.log('gameOver');
-                alert('gameOver');
+                alert("You've got " + String(gameStage - 1) + 'stage!!');
                 location.reload();
             }else{
                 //정답
