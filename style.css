@@ -33,7 +33,7 @@ body{
     background-color: #9f67ec;
 }
 .userSelect{
-    background-color: #65dca2;
+    background-color: #eadb5a;
 }
 
 #count{
@@ -48,6 +48,10 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 26px;
+}
+
+#stageNum{
+    display: none;
 }
 
 #startBtn{
