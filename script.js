@@ -73,7 +73,7 @@ function userSelect(){
             if(userClickId != pcSelect[userClickCnt]){
                 //오답, 게임오버
                 console.log('gameOver');
-                alert("You've got " + String(gameStage - 1) + 'stage!!');
+                alert("You've completed till Stage " + String(gameStage - 1) + '!!!');
                 location.reload();
             }else{
                 //정답
